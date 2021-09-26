@@ -33,7 +33,7 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - CloudFront (Content Delivery Network)
 - WAF (Web Application Firewall)
 
-**Server Less Services**
+## Server Less Services
 - Dynamo DB
 - S3 Bucket
 - Redshift
@@ -47,7 +47,7 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - AWS SQS
 - AWS Comprehend
 
-**Hybrid Services**
+## Hybrid Services
 - AWS Code Deploy
 - AWS System Manager
 - AWS Storage Gateway
@@ -55,7 +55,7 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - AWS Outposts*
 - AWS Cloud Watch Logs
 
-**Memory Based**
+## Memory Based
 - Code Artifact and Artifact are 2 Different Services on AWS
 - NAT Gateways are managed by AWS to get internet access to private subnets
 - NAT Instances are managed by OWN to get internet access to private subnets
@@ -80,4 +80,5 @@ _        CloudTrail Logs
 - Forecast: build highly accurate forecasts
 - Kendra: ML-powered search engine 
 - Personalize: real-time personalized recommendations
-**Billing**
+
+## Billing
