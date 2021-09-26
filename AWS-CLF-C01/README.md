@@ -133,7 +133,7 @@ _        CloudTrail Logs
        
  AWS Well Arcitect Tool - Free tool to review your architectures against the 5 pillars Well-Architected Framework and adopt architectural best practices
  
- ## Patners APN
+ ## Partners APN
  - APN Technology Partners: providing hardware, connectivity, and software
  - APN Consulting Partners: professional services firm to help build on AWS
  - APN Training Partners: find who can help you learn AWS
