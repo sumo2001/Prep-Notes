@@ -66,7 +66,7 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - At VPC Endpoint Interface : Rest AWS Services  
 - For having transitive peering between thousands of VPC and on-premises, hub-and-spoke (star) connection use AWS transit Gateway
 - Encryption Automatically enabled:
-_        CloudTrail Logs
+		CloudTrail Logs
         S3 Glacier
         Storage Gateway_
 - AWS Artifact - Can be used to support internal audit or compliance, Portal that provides customers with on-demand access to AWS compliance documentation and AWS agreements
