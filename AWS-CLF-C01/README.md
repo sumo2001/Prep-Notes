@@ -32,6 +32,7 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - Route 53 (DNS service)
 - CloudFront (Content Delivery Network)
 - WAF (Web Application Firewall)
+- AWS Organisations
 
 ## Server Less Services
 - Dynamo DB
@@ -82,3 +83,59 @@ _        CloudTrail Logs
 - Personalize: real-time personalized recommendations
 
 ## Billing
+- AWS Control Tower runs on top of AWS Organizations[SCP]
+- Reservations are available for EC2 Reserved Instances, DynamoDB Reserved Capacity, ElastiCache Reserved Nodes, RDS Reserved Instance, Redshift Reserved Nodes
+- Free Services
+        - IAM
+        - VPC
+        - Consolidated Billing
+        - Elastic Beanstalk
+        - CloudFormation
+        - Auto Scaling Groups
+- AWS Compute Optimizer : • Reduce costs and improve performance by recommending optimal AWS resources for your workloads
+- TCO Calculator: from on-premises to AWS
+- Simple Monthly Calculator / Pricing Calculator: cost of services on AWS
+- Billing Dashboard: high level overview + free tier dashboard
+- Cost Allocation Tags: tag resources to create detailed reports
+- Cost and Usage Reports: most comprehensive billing dataset
+- Cost Explorer:View current usage (detailed) and forecast usage
+- Billing Alarms: in us-east-1 – track overall and per-service billing
+- Budgets: more advanced – track usage, costs, RI, and get alerts
+- AWS STS[Security Token Service] - Kerberos
+
+## The 5 pillars
+- Operational Excellence
+        - Perform Operations as Code
+        - Annotate doccumentation
+        - Make small changes, which are reversible
+        - ChecK Operation Procedures Frequently
+        - Accept Failures and learn from failures
+- Security
+        - Implement a strong identity foundation
+        - Apply security at all layers and enable tracebility
+        - Protect data in rest nd transist
+        - Use Best Security Practices and prepare for security events
+- Reliablity
+        - Test recovery procedures
+        - Automatically recover from failure
+        - Scale horizontally to increase availability
+        - Stop guessing capacity and manage change in automation
+- Performance Efficieny
+        - Democratize advanced technologies
+        - Go global in minutes and use serverless
+        - Experiment more often and try to know all AWS services
+- Cost Optimization
+        - Adopt a consumption mode
+        - Measure overall efficiency
+        - Stop spending money on data center operations
+        - Analyze and attribute expenditure
+        - Use managed and application level services to reduce cost of ownership4
+       
+ AWS Well Arcitect Tool - Free tool to review your architectures against the 5 pillars Well-Architected Framework and adopt architectural best practices
+ 
+ ## Patners APN
+ - APN Technology Partners: providing hardware, connectivity, and software
+ - APN Consulting Partners: professional services firm to help build on AWS
+ - APN Training Partners: find who can help you learn AWS
+ - AWS Competency Program: technical proficiency and proven customer success in specialized solution areas
+ - AWS Navigate Program: help Partners become better Partners
