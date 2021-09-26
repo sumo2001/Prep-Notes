@@ -66,9 +66,9 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - At VPC Endpoint Interface : Rest AWS Services  
 - For having transitive peering between thousands of VPC and on-premises, hub-and-spoke (star) connection use AWS transit Gateway
 - Encryption Automatically enabled:
-     + CloudTrail Logs
-     + S3 Glacier
-     + Storage Gateway
+     + AWs CloudTrail Logs
+     + AWS S3 Glacier
+     + AWS Storage Gateway
 - AWS Artifact - Can be used to support internal audit or compliance, Portal that provides customers with on-demand access to AWS compliance documentation and AWS agreements
 - AWS GuardDuty - Intelligent Threat discovery to Protect AWS Account using ML
 - AWS Insceptor - Automated Security Assessments for EC2 instances
@@ -139,3 +139,22 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
  - APN Training Partners: find who can help you learn AWS
  - AWS Competency Program: technical proficiency and proven customer success in specialized solution areas
  - AWS Navigate Program: help Partners become better Partners
+
+## Practice Exams Review
+- Agility - Agility refers to new IT resources being only a click away
+- **AWS Trusted Advisor - AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices on cost optimization, security, fault tolerance, service limits, and performance improvement**
+- Inspector means EC2- Ec2 means Inspector
+- Chef and Puppet - AWS OpsWork
+- Aws Organisations - Can Manage all AWS accounts and can be used to share reserved Instances amongst all units
+- Systems Manager provides a unified user interface so you can view operational data from multiple AWS services and allows you to automate operational tasks across your AWS resources [Grouping]
+- Service Catalog - AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS
+- Enhance Database Availability is the main reason deploying an RDS database in a Multi-AZ configuration
+- ![image](https://user-images.githubusercontent.com/51809378/134817783-b7dce802-e816-42d1-ab29-b9e388bc90cd.png)
+- AWS Cloud trail logs, AWS S3 Glacier and AWS Storage Gateway by default encryption is enabled on them
+- Auto Scaling helps you ensure that you have the correct number of Amazon EC2 instances available to handle the load for your application.
+- AWS Compute Optimizer helps you identify the optimal AWS resource configurations, such as **Amazon EC2 instance types, Amazon EBS volume configurations, and AWS Lambda function memory size**
+- Step Function - AWS Step Function lets you coordinate multiple AWS services into serverless workflows. You can design and run workflows that stitch together services such as AWS Lambda, AWS Glue and Amazon SageMaker
+-  Cloud Trail -  AWS account activity meets the governance, compliance and auditing norm
+- The AMI must be in the same region as that of the EC2 instance to be launched. If the AMI exists in a different region, you can copy that AMI to the region where you want to launch the EC2 instance 
+
+
