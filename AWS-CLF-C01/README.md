@@ -85,13 +85,13 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 ## Billing
 - AWS Control Tower runs on top of AWS Organizations[SCP]
 - Reservations are available for EC2 Reserved Instances, DynamoDB Reserved Capacity, ElastiCache Reserved Nodes, RDS Reserved Instance, Redshift Reserved Nodes
-- Free Services
-        - IAM
-        - VPC
-        - Consolidated Billing
-        - Elastic Beanstalk
-        - CloudFormation
-        - Auto Scaling Groups
+* Free Services
+        * IAM
+        * VPC
+        * Consolidated Billing
+        * Elastic Beanstalk
+        * CloudFormation
+        * Auto Scaling Groups
 - AWS Compute Optimizer : • Reduce costs and improve performance by recommending optimal AWS resources for your workloads
 - TCO Calculator: from on-premises to AWS
 - Simple Monthly Calculator / Pricing Calculator: cost of services on AWS
