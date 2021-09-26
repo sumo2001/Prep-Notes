@@ -87,12 +87,12 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - AWS Control Tower runs on top of AWS Organizations[SCP]
 - Reservations are available for EC2 Reserved Instances, DynamoDB Reserved Capacity, ElastiCache Reserved Nodes, RDS Reserved Instance, Redshift Reserved Nodes
 - Free Services
-        * IAM
-        * VPC
-        * Consolidated Billing
-        * Elastic Beanstalk
-        * CloudFormation
-        * Auto Scaling Groups
+  + IAM
+  + VPC
+  + Consolidated Billing
+  + Elastic Beanstalk
+  + CloudFormation
+  + Auto Scaling Groups
 - AWS Compute Optimizer : • Reduce costs and improve performance by recommending optimal AWS resources for your workloads
 - TCO Calculator: from on-premises to AWS
 - Simple Monthly Calculator / Pricing Calculator: cost of services on AWS
@@ -160,10 +160,10 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - 7 Core Checks from AWS Support Plan - D and B
 - Developer plan will give you general architectural guidance as you build and test
 - AWS Shield Advanced provides expanded DDoS attack protection for
-          + Amazon CloudFront distributions
-          + Amazon Route 53 hosted zones
-          + AWS Global Accelerator accelerators
-          + ALB and ELB
-          + Amazon Elastic Compute Cloud (Amazon EC2) Elastic IP addresses
+    + Amazon CloudFront distributions
+    + Amazon Route 53 hosted zones
+    + AWS Global Accelerator accelerators
+    + ALB and ELB
+    + Amazon Elastic Compute Cloud (Amazon EC2) Elastic IP addresses
 - The AWS account must be able to operate as a standalone account. Only then it can be removed from AWS organizations
 - ![image](https://user-images.githubusercontent.com/51809378/134818982-70c28160-97ae-4e5f-b22a-5efe97964453.png)
