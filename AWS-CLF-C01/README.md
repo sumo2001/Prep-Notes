@@ -76,5 +76,8 @@ _        CloudTrail Logs
 - Amazon Transcribe - convert speech to text
 - Amazon **P**olly - Convert **T**ext to **s**peech [_TSP_]
 - Amazon Lex - Automatic Speech Recognition (ASR) to convert speech to text - Chatbots
-- 
-- 
+- SageMaker: machine learning for every developer and data scientist 
+- Forecast: build highly accurate forecasts
+- Kendra: ML-powered search engine 
+- Personalize: real-time personalized recommendations
+**Billing**
