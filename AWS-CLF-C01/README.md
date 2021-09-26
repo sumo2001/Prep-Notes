@@ -2,10 +2,10 @@
 
 Hi there!
 This is my personal notes which i wrote in hurry prep of AWS Cloud Practioner CLF-C01
-**Security** 
-- AWS [**OF**]
-- Customer[**IN**]
-- Shared: Patch Management, Configuration Management, Awareness & Training
++ **Security** 
+     + AWS [**OF**]
+     + Customer[**IN**]
+     + Shared: Patch Management, Configuration Management, Awareness & Training
 
 
 ## Cloud Types and their Computing Types:
