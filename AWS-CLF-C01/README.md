@@ -28,11 +28,11 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 • Many AWS services (ex: Rekognition for Machine Learning) Google Apps (Gmail), Dropbox, Zoom
 
 **AWS Global Services:**
-- Identity and Access Management (IAM)
-- Route 53 (DNS service)
-- CloudFront (Content Delivery Network)
-- WAF (Web Application Firewall)
-- AWS Organisations
+* Identity and Access Management (IAM)
+* Route 53 (DNS service)
+* CloudFront (Content Delivery Network)
+* WAF (Web Application Firewall)
+* AWS Organisations
 
 ## Server Less Services
 - Dynamo DB
@@ -85,13 +85,13 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 ## Billing
 - AWS Control Tower runs on top of AWS Organizations[SCP]
 - Reservations are available for EC2 Reserved Instances, DynamoDB Reserved Capacity, ElastiCache Reserved Nodes, RDS Reserved Instance, Redshift Reserved Nodes
-* Free Services
-        * IAM
-        * VPC
-        * Consolidated Billing
-        * Elastic Beanstalk
-        * CloudFormation
-        * Auto Scaling Groups
+- Free Services
+        - IAM
+        - VPC
+        - Consolidated Billing
+        - Elastic Beanstalk
+        - CloudFormation
+        - Auto Scaling Groups
 - AWS Compute Optimizer : • Reduce costs and improve performance by recommending optimal AWS resources for your workloads
 - TCO Calculator: from on-premises to AWS
 - Simple Monthly Calculator / Pricing Calculator: cost of services on AWS
