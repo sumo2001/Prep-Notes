@@ -180,6 +180,8 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 -  EC2 instances can access files on an EFS file system across many Availability Zones, Regions and VPCs
 -  AWS Cloud recommends microservices as an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs
 -  EC2 instance user data is the data that you specified in the form of a bootstrap script or configuration parameters while launching your instance.
+![image](https://user-images.githubusercontent.com/51809378/134890859-17e3817a-f551-44df-93ed-48a46f0d141a.png)
+- 
 
 
 
