@@ -106,7 +106,7 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 
 ## The 5 pillars
 - Operational Excellence 
-   +Perform Operations as Code
+   + Perform Operations as Code
    + Annotate documentation
    + Make small changes, which are reversible
    + Check Operation Procedures Frequently
