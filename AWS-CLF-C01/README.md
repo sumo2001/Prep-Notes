@@ -168,3 +168,14 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - The AWS account must be able to operate as a standalone account. Only then it can be removed from AWS organizations
 - ![image](https://user-images.githubusercontent.com/51809378/134818982-70c28160-97ae-4e5f-b22a-5efe97964453.png)
 - CloudWatch : Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides data and actionable insights to monitor applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health
+- Security Group acts as a firewall at the instance level whereas Network Access Control List acts as a firewall at the subnet level
+- AWS Storage Gateway service provides three different types of gateways – Tape Gateway, File Gateway, and Volume Gateway
+-  Outbound data to the internet from all AWS regions is billed at region-specific, tiered data transfer rates. Inbound data transfer into all AWS regions from the internet is free.
+-  A Security Group is stateful, that is, it automatically allows the return traffic
+-  A NACL contains a numbered list of rules and evaluates these rules in the increasing order while deciding whether to allow the traffic
+-  ![image](https://user-images.githubusercontent.com/51809378/134849542-7c86fcb0-23bb-4555-9cca-bc1bc8c684f7.png)
+-  Amazon EBS Snapshots are stored incrementally, which means you are billed only for the changed blocks stored
+-  You will pay a fee each time you read from or write data stored on the EFS - Infrequent Access storage class
+-  AWS Budgets - Cost budget, Usage budget, Reservation budget
+-  EC2 instances can access files on an EFS file system across many Availability Zones, Regions and VPCs
+
