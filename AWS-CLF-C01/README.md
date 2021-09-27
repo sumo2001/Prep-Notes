@@ -155,7 +155,7 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - Auto Scaling helps you ensure that you have the correct number of Amazon EC2 instances available to handle the load for your application.
 - AWS Compute Optimizer helps you identify the optimal AWS resource configurations, such as **Amazon EC2 instance types, Amazon EBS volume configurations, and AWS Lambda function memory size**
 - Step Function - AWS Step Function lets you coordinate multiple AWS services into serverless workflows. You can design and run workflows that stitch together services such as AWS Lambda, AWS Glue and Amazon SageMaker
--  Cloud Trail -   service enables risk auditing by continuously monitoring and logging account activity, including user actions in the AWS Management Console and AWS SDKs
+**-  Cloud Trail -   service enables risk auditing by continuously monitoring and logging account activity, including user actions in the AWS Management Console and AWS SDKs**
 - The AMI must be in the same region as that of the EC2 instance to be launched. If the AMI exists in a different region, you can copy that AMI to the region where you want to launch the EC2 instance 
 - 7 Core Checks from AWS Support Plan - D and B
 - Developer plan will give you general architectural guidance as you build and test
@@ -167,7 +167,7 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
     + Amazon Elastic Compute Cloud (Amazon EC2) Elastic IP addresses
 - The AWS account must be able to operate as a standalone account. Only then it can be removed from AWS organizations
 - ![image](https://user-images.githubusercontent.com/51809378/134818982-70c28160-97ae-4e5f-b22a-5efe97964453.png)
-- CloudWatch : Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides data and actionable insights to monitor applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health
+-**CloudWatch :CloudWatch provides data and actionable insights to monitor applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health**
 - Security Group acts as a firewall at the instance level whereas Network Access Control List acts as a firewall at the subnet level
 - AWS Storage Gateway service provides three different types of gateways – Tape Gateway, File Gateway, and Volume Gateway
 -  Outbound data to the internet from all AWS regions is billed at region-specific, tiered data transfer rates. Inbound data transfer into all AWS regions from the internet is free.
