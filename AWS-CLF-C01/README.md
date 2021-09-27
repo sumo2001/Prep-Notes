@@ -167,3 +167,4 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
     + Amazon Elastic Compute Cloud (Amazon EC2) Elastic IP addresses
 - The AWS account must be able to operate as a standalone account. Only then it can be removed from AWS organizations
 - ![image](https://user-images.githubusercontent.com/51809378/134818982-70c28160-97ae-4e5f-b22a-5efe97964453.png)
+- CloudWatch : Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides data and actionable insights to monitor applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health
