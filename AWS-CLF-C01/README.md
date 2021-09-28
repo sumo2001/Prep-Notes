@@ -147,6 +147,7 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 
 ## Practice Exams Review
 - Agility - Agility refers to new IT resources being only a click away
+- ![image](https://user-images.githubusercontent.com/51809378/135115999-7b1eb1a5-f18d-41ce-8ff6-079523bc8bcc.png)
 - **AWS Trusted Advisor - AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices on cost optimization, security, fault tolerance, service limits, and performance improvement**
 - Inspector means EC2- Ec2 means Inspector
 - Chef and Puppet - AWS OpsWork
