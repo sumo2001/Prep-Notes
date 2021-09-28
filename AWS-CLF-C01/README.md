@@ -10,6 +10,7 @@ This is my personal notes which i wrote in hurry prep of AWS Cloud Practioner CL
 
 ## Cloud Types and their Computing Types:
 There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
+
 **Private Cloud:**  Cloud services used by a single organization, not exposed to the public. Ex: Rackspace
 
 **Public Cloud:** Cloud resources owned and operated by a third-party cloud service provider delivered over the Internet. Ex: GCP, AWS
