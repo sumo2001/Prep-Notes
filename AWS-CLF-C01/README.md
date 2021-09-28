@@ -104,6 +104,9 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - Billing Alarms: in us-east-1 – track overall and per-service billing
 - Budgets: more advanced – track usage, costs, RI, and get alerts
 - AWS STS[Security Token Service] - Kerberos
+- ![image](https://user-images.githubusercontent.com/51809378/135027384-6baa67a0-1963-4961-8c90-26ebab95e554.png)
+
+
 
 ## The 5 pillars
 - Operational Excellence 
