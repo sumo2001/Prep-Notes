@@ -187,6 +187,8 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 ![image](https://user-images.githubusercontent.com/51809378/134890859-17e3817a-f551-44df-93ed-48a46f0d141a.png)
 - Agility - A startup is working on a new application that needs to go to market quickly. The application requirements may need to be adjusted in the near future
 - CloudWatch monitors performance, whereas CloudTrail monitors actions in your AWS environment.
+- ![image](https://user-images.githubusercontent.com/51809378/135115436-e895b210-9ea2-4fcf-a790-8eb31adba8b1.png)
+
 
 
 
