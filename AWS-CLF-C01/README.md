@@ -162,7 +162,6 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - Step Function - AWS Step Function lets you coordinate multiple AWS services into serverless workflows. You can design and run workflows that stitch together services such as AWS Lambda, AWS Glue and Amazon SageMaker
 -  **Cloud Trail -   service enables risk auditing by continuously monitoring and logging account activity, including user actions in the AWS Management Console and AWS SDKs**
 - The AMI must be in the same region as that of the EC2 instance to be launched. If the AMI exists in a different region, you can copy that AMI to the region where you want to launch the EC2 instance 
-- 7 Core Checks from AWS Support Plan - D and B
 - Developer plan will give you general architectural guidance as you build and test
 - AWS Shield Advanced provides expanded DDoS attack protection for
     + Amazon CloudFront distributions
