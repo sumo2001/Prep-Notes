@@ -21,3 +21,5 @@
 + These records resolve to the address of the servers that handle the email for the domain you are querying, 
 ### TXT Record
 + TXT records are free text fields where any text-based data can be stored. TXT records have multiple uses, They can also be used to verify ownership of the domain name when signing up for third party services.
+
+![image](https://user-images.githubusercontent.com/51809378/139311311-22e53f73-c921-457c-bfd7-e2cf4d0ac3c1.png)
