@@ -23,3 +23,6 @@
 + TXT records are free text fields where any text-based data can be stored. TXT records have multiple uses, They can also be used to verify ownership of the domain name when signing up for third party services.
 
 ![image](https://user-images.githubusercontent.com/51809378/139311311-22e53f73-c921-457c-bfd7-e2cf4d0ac3c1.png)
+
+![image](https://user-images.githubusercontent.com/51809378/139378483-f052332d-a14a-42e3-89eb-e0a1bee8c316.png)
+
