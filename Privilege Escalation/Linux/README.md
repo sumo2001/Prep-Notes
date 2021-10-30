@@ -36,7 +36,7 @@
 ### Tools
 + Tools allow us to automate the reconnaissance that can identify potential privilege escalations.
 + https://github.com/diego-treitos/linux-smart-enumeration 
-        + curl "https://github.com/diego-treitos/linux-smart-enumeration/raw/master/lse.sh" -Lo lse.sh;chmod 700 lse.sh
++     curl "https://github.com/diego-treitos/linux-smart-enumeration/raw/master/lse.sh" -Lo lse.sh;chmod 700 lse.sh
 + https://github.com/rebootuser/LinEnum
 + https://github.com/linted/linuxprivchecker
 + https://github.com/AlessandroZ/BeRoot
