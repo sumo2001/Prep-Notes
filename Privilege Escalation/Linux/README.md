@@ -14,9 +14,10 @@
 + All files and Directories can only have a single owner, only owner can change permissions to a file or a directory 
 + when a execute flag is set then only you can enter into the directory or you can cd into the directory when a read is set you can just list the contents in the directory when write flag is set you can create subdirectories in the directory 
 + Read =4, Write = 2, Execute = 1 
-### SGID/SUID
-+ SUID, when set files will get executed with the permissions of the file owner.  
-+ SGID when set on a file, the files will get executed with the privileges of the file group. When set on a directory, files created within the directory will inherit that group. Of the directory itself. 
+### SUID/SGID
++ SUID, when set files will inherit the permissions of the file owner.  
++ SGID set on a file, it allows the file to be executed as the group that owns the file (similar to SUID), If set on a directory, any files created in the directory will have their group ownership set to that of the directory owner
++ The last special permission has been dubbed the "sticky bit." This permission does not affect individual files. However, at the directory level, it restricts file deletion. Only the owner (and root) of a file can remove the file within that directory.
 
 ### ID's
 + Three types of ID's, real ID, effective ID saved UID.  
@@ -25,6 +26,6 @@
 + A user's effective ID is normally equal to to their real ID.  
 + When executing a process as a another user, the effective ID is set to that user's real ID.  
 + The effective ID is used in most access control decisions to verify user. Such as whoami  command will use effective ID.  
-+ Saved UID will be used to ensure that SUID processes can temporarily switch a users effective ID back to their real ID and back again without losing the track of their original effective ID. 
++ Saved UID: It is used when a process is running with elevated privileges (generally root) needs to do some under-privileged work, this can be achieved by temporarily switching to a non-privileged account, While performing under-privileged work, the effective UID is changed to some lower privilege value, and the euid is saved to saved userID(suid), so that it can be used for switching back to a privileged account when the task is completed. 
 
  
