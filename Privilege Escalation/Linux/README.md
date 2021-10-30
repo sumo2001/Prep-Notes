@@ -1,4 +1,4 @@
-## Blank Heading
+## Briefing
 + Privilege escalation seems to be simple but requires a lot of reconnaissance on the compromised system, once you can able to get a simple shell then escalating into it into a root shell is easy  
 + But you may require some misconfigurations or combination of misconfigurations to spawn a root shell 
 + Mostly every privilege escalation in Linux is due to active access control violations  
@@ -27,5 +27,19 @@
 + When executing a process as a another user, the effective ID is set to that user's real ID.  
 + The effective ID is used in most access control decisions to verify user. Such as whoami  command will use effective ID.  
 + Saved UID: It is used when a process is running with elevated privileges (generally root) needs to do some under-privileged work, this can be achieved by temporarily switching to a non-privileged account, While performing under-privileged work, the effective UID is changed to some lower privilege value, and the euid is saved to saved userID(suid), so that it can be used for switching back to a privileged account when the task is completed. 
+
+### Spawning Shells
++ Executing /bin/sh or /bin/bash
++ "rootbash" SUID: Create a copy of the /bin/bash executable file (I usually rename it rootbash), make sure it is owned by the root user, **and has the SUID bit set.**, root shell can be spawned by simply executing the rootbash file with the -p flag
++ msfvenom can also be used to craft a reverse shell
++ A tool to generate various ways to spawn a reverse shell: https://github.com/mthbernardes/rsg
+### Tools
++ Tools allow us to automate the reconnaissance that can identify potential privilege escalations.
++ https://github.com/diego-treitos/linux-smart-enumeration 
+        + curl "https://github.com/diego-treitos/linux-smart-enumeration/raw/master/lse.sh" -Lo lse.sh;chmod 700 lse.sh
++ https://github.com/rebootuser/LinEnum
++ https://github.com/linted/linuxprivchecker
++ https://github.com/AlessandroZ/BeRoot
++ http://pentestmonkey.net/tools/audit/unix-privesc-check
 
  
