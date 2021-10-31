@@ -42,4 +42,21 @@
 + https://github.com/AlessandroZ/BeRoot
 + http://pentestmonkey.net/tools/audit/unix-privesc-check
 
+## Exploits
+1. [Kernel Exploits](https://github.com/sumo2001/Prep-Notes/edit/main/Privilege%20Escalation/Linux/README.md#kernel-exploits)
+2. [Service Exploits](https://github.com/sumo2001/Prep-Notes/edit/main/Privilege%20Escalation/Linux/README.md#service-exploits)
+
+### Kernel Exploits
++ Kernels are the core of any operating system, a layer between application software and the actual computer hardware.
++ The kernel has complete control over the operating system, a kernel vulnerability can results in root shell
++ Finding and using kernel exploits is usually a simple process:
++      1. Enumerate kernel version (uname -a).
+       2. Find matching exploits (Google, ExploitDB, GitHub).
+       3. Compile and run
+ + **Beware though, as Kernel exploits can often be unstable and may be one-shot or cause a system crash, as it has to be the last option to consider**
+ + We can use searchsploit to find certian kernel exploit after successful enumeration
+ + But, using [Linux Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) will help us to find kernel exploits efficiently.
+ ### Service Exploits
+
+
  
