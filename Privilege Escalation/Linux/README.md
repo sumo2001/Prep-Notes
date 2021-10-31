@@ -56,6 +56,11 @@
  + **Beware though, as Kernel exploits can often be unstable and may be one-shot or cause a system crash, as it has to be the last option to consider**
  + We can use searchsploit to find certian kernel exploit after successful enumeration
  + But, using [Linux Exploit Suggester 2](https://github.com/jondonas/linux-exploit-suggester-2) will help us to find kernel exploits efficiently.
+ + Example:
+     + Lets consider enumeration reveals the kernel version as "2.6.32"
+     + searchsploit linux kernel 2.6 priv esc debian
+     + ./linux-exploit-suggester-2.pl –k 2.6.32
+     + This will help us to esclate and get a root shell, ps: reading the exploit code/steps is very important
  ### Service Exploits
 
 
