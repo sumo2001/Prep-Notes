@@ -45,6 +45,7 @@
 ## Exploits
 1. [Kernel Exploits](https://github.com/sumo2001/Prep-Notes/blob/main/Privilege%20Escalation/Linux/README.md#kernel-exploits)
 2. [Service Exploits](https://github.com/sumo2001/Prep-Notes/blob/main/Privilege%20Escalation/Linux/README.md#service-exploits)
+3. [Weak File Permissions](https://github.com/sumo2001/Prep-Notes/blob/main/Privilege%20Escalation/Linux/README.md#weak-file-permissions)
 
 ### Kernel Exploits
 + Kernels are the core of any operating system, a layer between application software and the actual computer hardware.
@@ -62,6 +63,16 @@
      + ./linux-exploit-suggester-2.pl –k 2.6.32
      + This will help us to esclate and get a root shell, ps: reading the exploit code/steps is very important
  ### Service Exploits
++ Services are simply programs that run in the background, accepting input or performing regular tasks, running as root and they are vulnerable?, then voila!
+```
+ps aux | grep "^root" 
+<program> -- version
+Identify the exploit
+```
++ Consider an example, say services ssh and myql and running as root on a remote machine, enabling port forwarding mysql with random port,and connecting to local machines, spawns a root shell
+    + A root process may be bound to an internal port, through which it communicates.
+    + If for some reason, an exploit cannot run locally on the target machine, the port can be forwarded using SSH to your local machine
+    + "ssh -R local-port:127.0.0.1:target-port username@local-machine"
 
 
  
