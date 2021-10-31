@@ -43,8 +43,8 @@
 + http://pentestmonkey.net/tools/audit/unix-privesc-check
 
 ## Exploits
-1. [Kernel Exploits](https://github.com/sumo2001/Prep-Notes/edit/main/Privilege%20Escalation/Linux/README.md#kernel-exploits)
-2. [Service Exploits](https://github.com/sumo2001/Prep-Notes/edit/main/Privilege%20Escalation/Linux/README.md#service-exploits)
+1. [Kernel Exploits](https://github.com/sumo2001/Prep-Notes/Privilege%20Escalation/Linux/README.md#kernel-exploits)
+2. [Service Exploits](https://github.com/sumo2001/Prep-Notes/Privilege%20Escalation/Linux/README.md#service-exploits)
 
 ### Kernel Exploits
 + Kernels are the core of any operating system, a layer between application software and the actual computer hardware.
