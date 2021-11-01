@@ -78,10 +78,8 @@ Identify the exploit
   + find /etc -maxdepth 1 **-writable/-readable** -type f
   + Find all directories which can be written to: "find / -executable -writable -type d 2> /dev/null"
  + If we are able to read the contents of the **/etc/shadow** file, we might be able to crack the root user’s password hash.
- + If we can able to write we can replace the hash with a known hash
-       + mkpasswd -m sha-512 newpassword
-       + replace the above output ;)
-+ If we can write to **/etc/passwd**, we can easily enter a known password hash for the root user, and then use the su command to switch to the root user.
+ + If we can able to write we can replace the hash with a known hash, **mkpasswd -m sha-512 newpassword**
++ If we can write to **/etc/passwd**, we can easily enter a known password hash for the root user, and then use the su command to switch to the root user : **openssl passwd "password"**
 + ![image](https://user-images.githubusercontent.com/51809378/139635790-c00af860-4abd-493d-ba99-42d8b5d02f97.png)
 + we can create a new user but assign them the root user ID (0). This works because Linux allows multiple entries for the same user ID, as long as the usernames are different.
 + ![image](https://user-images.githubusercontent.com/51809378/139635838-3d71776e-4a40-42a8-8cda-06e69a87ab41.png)
