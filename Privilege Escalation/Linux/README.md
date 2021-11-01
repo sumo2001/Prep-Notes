@@ -77,21 +77,37 @@ Identify the exploit
 ### Weak File Permissions
   + find /etc -maxdepth 1 **-writable/-readable** -type f
   + Find all directories which can be written to: "find / -executable -writable -type d 2> /dev/null"
- #### The /etc/shadow : contains user password hashes
- + If we are able to read the contents of the /etc/shadow file, we might be able to crack the root user’s password hash.
+ + If we are able to read the contents of the **/etc/shadow** file, we might be able to crack the root user’s password hash.
  + If we can able to write we can replace the hash with a known hash
        + mkpasswd -m sha-512 newpassword
        + replace the above output ;)
- #### The /etc/passwd
-+ If we can write to /etc/passwd, we can easily enter a known password hash for the root user, and then use the su command to switch to the root user.
++ If we can write to **/etc/passwd**, we can easily enter a known password hash for the root user, and then use the su command to switch to the root user.
 + ![image](https://user-images.githubusercontent.com/51809378/139635790-c00af860-4abd-493d-ba99-42d8b5d02f97.png)
 + we can create a new user but assign them the root user ID (0). This works because Linux allows multiple entries for the same user ID, as long as the usernames are different.
 + ![image](https://user-images.githubusercontent.com/51809378/139635838-3d71776e-4a40-42a8-8cda-06e69a87ab41.png)
 + In some versions of Linux, it is possible to simply delete the “x”, which Linux interprets as the user having no password
 + ![image](https://user-images.githubusercontent.com/51809378/139635677-11a2a039-945a-4c5d-8f3b-0d4e91a3d466.png)
-#### Insecure Backups
-+ It is always worth exploring the file system looking for readable backup files. Some common places include user home directories, the / (root) directory, /tmp, and /var/backups. Example : SSH private keys
-+ 
++ It is always worth exploring the file system looking for **readable backup files**. Some common places include user home directories, the / (root) directory, /tmp, and /var/backups. Example : SSH private keys
+### Sudo
++ sudo is a program which lets users run other programs with the security privileges of other users. By default, that other user will be root.
++ A user generally needs to enter their password to use sudo, and they must be permitted access via rule(s) in the /etc/sudoers file.
++ Rules can be used to limit users to certain programs, and for go the password entry requirement.
++ If your low privileged user account can use sudo unrestricted and you know the user’s password, privilege escalation is easy, by using the “switch user” (su) command to spawn a root shell i.e _sudo su_ 
++ ![image](https://user-images.githubusercontent.com/51809378/139639245-415ef6ac-fbfe-4741-aaf3-3876d5782d59.png) : Possible Methods
++ Even if we are restricted to running certain programs via sudo, it is sometimes possible to “escape” the program and spawn a shell.
++ A list of programs with their shell escape sequences can be found here: https://gtfobins.github.io/ , Since the initial program runs with root privileges, so 
+
+```
+    List the programs your user is allowed to run via sudo -l
+    For each program in the list, see if there is a shell escape sequence on GTFOBins
+    If an escape sequence exists, run the program via sudo and perform the sequence to spawn a root shell.
+```
++ Abusing Intended Functionality
+    +  If we can read/write files owned by root, we may be able to extract or modify useful information
+    +  Lets consider apache is allowed to run via sudo
+    +  apache will parse a given config file, it will error and print any line it doesn’t understand : sudo apache2 -f /etc/shadow
+    +  prints out the hases, save it, crack it : john --format=sha512crypt --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
++ Environment Variables
 
 
 
