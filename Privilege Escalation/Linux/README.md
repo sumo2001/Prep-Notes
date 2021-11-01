@@ -46,6 +46,7 @@
 1. [Kernel Exploits](https://github.com/sumo2001/Prep-Notes/blob/main/Privilege%20Escalation/Linux/README.md#kernel-exploits)
 2. [Service Exploits](https://github.com/sumo2001/Prep-Notes/blob/main/Privilege%20Escalation/Linux/README.md#service-exploits)
 3. [Weak File Permissions](https://github.com/sumo2001/Prep-Notes/blob/main/Privilege%20Escalation/Linux/README.md#weak-file-permissions)
+4. [Sudo](https://github.com/sumo2001/Prep-Notes/blob/main/Privilege%20Escalation/Linux/README.md#sudo)
 
 ### Kernel Exploits
 + Kernels are the core of any operating system, a layer between application software and the actual computer hardware.
@@ -73,6 +74,25 @@ Identify the exploit
     + A root process may be bound to an internal port, through which it communicates.
     + If for some reason, an exploit cannot run locally on the target machine, the port can be forwarded using SSH to your local machine
     + "ssh -R local-port:127.0.0.1:target-port username@local-machine"
+### Weak File Permissions
+  + find /etc -maxdepth 1 **-writable/-readable** -type f
+  + Find all directories which can be written to: "find / -executable -writable -type d 2> /dev/null"
+ #### The /etc/shadow : contains user password hashes
+ + If we are able to read the contents of the /etc/shadow file, we might be able to crack the root user’s password hash.
+ + If we can able to write we can replace the hash with a known hash
+       + mkpasswd -m sha-512 newpassword
+       + replace the above output ;)
+ #### The /etc/passwd
++ If we can write to /etc/passwd, we can easily enter a known password hash for the root user, and then use the su command to switch to the root user.
++ ![image](https://user-images.githubusercontent.com/51809378/139635790-c00af860-4abd-493d-ba99-42d8b5d02f97.png)
++ we can create a new user but assign them the root user ID (0). This works because Linux allows multiple entries for the same user ID, as long as the usernames are different.
++ ![image](https://user-images.githubusercontent.com/51809378/139635838-3d71776e-4a40-42a8-8cda-06e69a87ab41.png)
++ In some versions of Linux, it is possible to simply delete the “x”, which Linux interprets as the user having no password
++ ![image](https://user-images.githubusercontent.com/51809378/139635677-11a2a039-945a-4c5d-8f3b-0d4e91a3d466.png)
+#### Insecure Backups
++ It is always worth exploring the file system looking for readable backup files. Some common places include user home directories, the / (root) directory, /tmp, and /var/backups. Example : SSH private keys
++ 
+
 
 
  
