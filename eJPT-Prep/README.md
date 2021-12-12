@@ -49,6 +49,7 @@
 - This will do a portscan on the remote network and reveals the open ports
 - Then we need to portforward our local port to the remote port do a nmap scan
 - portfwd add -l 1234 -p 21 -r 192.69.228.3  -> l [local port] p [parayvalla port] r [remote Ip]
+- portfwd add -L <attacker machine IP> -l listening_port -p 80 -r <victim machine IP>
 - nmap -sS -sV -p 1234 localhost
 - This reveals a ftp service and version, using metasploit, we can find a inbuilt exploit, then boo tada
 
