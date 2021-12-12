@@ -7,6 +7,10 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - Once can actually sniff HTTP traffic only in clear using wireshark, we cant examine the HTTPS traffic
 - Follow TCP Stream 
 #### Find the Secret Server
+- sudo ip  route add 192.168.222.0/24 via  10.175.34.1     [sudo ip route add ip/subnet via gateway]
+- sudo ip route add 0.0.0.0/0 via 192.168.1.1
+#### Data Exfiltration
+- 
 
 ### The Black Box Walkthrough's : Box 1
 
