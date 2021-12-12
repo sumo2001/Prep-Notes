@@ -1,5 +1,13 @@
 ## eJPT 🛠
 
+Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my INE prep course for Ejpt
+
+### Inbuilt Labs
+#### HTTPS Traffic Sniffing
+- Once can actually sniff HTTP traffic only in clear using wireshark, we cant examine the HTTPS traffic
+- Follow TCP Stream 
+#### Find the Secret Server
+
 ### The Black Box Walkthrough's : Box 1
 
 #### Machine 1
