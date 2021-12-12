@@ -10,7 +10,21 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - sudo ip  route add 192.168.222.0/24 via  10.175.34.1     [sudo ip route add ip/subnet via gateway]
 - sudo ip route add 0.0.0.0/0 via 192.168.1.1
 #### Data Exfiltration
-- 
+- Configure the DNS server as attcker IP for Victim machine
+- https://github.com/TryCatchHCF/PacketWhisper
+- Open python server on attacker machine
+- Download the zip on victim machine and run it
+- We are good to exflitrate data ;)
+
+#### Burp
+- Inspect the website, from that we can able to discover robots.txt
+- Using sniper from burp, check all the directories availibility
+- Which reveals connections directory as 200, and ?debug is parameter that we came around robots.txt
+- Playing around with parameter reveals it can only be set to true
+- Set it to true, gives sensitive information back
+- Fixing the In Scope
+- Target > Site map tab > Spider this host
+- Try to bypass the login, using intercept or any other means
 
 ### The Black Box Walkthrough's : Box 1
 
@@ -27,6 +41,8 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 -  rename .elf to .war upload it, delpoy and this file can be relocated at /var/lib/tomcat8/webapps
 -  mv /var/lib/tomcat8/webapps/meter.war /tmp/meter ls /tmp/meter chmod +x /tmp/meter
 -  reverse shell at meterpreter listener
+-  Intruder option and thier positions to attack
+
 
 #### Machine 2
 - sudo nmap -Pn -T4 --open -sS -sC -sV --min-rate=1000 --max-retries=3 -p- 172.16.64.140 -v  
