@@ -25,6 +25,13 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - Fixing the In Scope
 - Target > Site map tab > Spider this host
 - Try to bypass the login, using intercept or any other means
+#### Scanning and OS Fingerprinting
+- fping -a -g 10.142.111.0/24 2> /dev/null
+- nmap -sn -n 10.142.111.*    [There is probably a host that does not respond to ICMP echo requests, but that has a service listening on the network.]
+- nmap -sS 10.142.111.1,6,48,96,99,100,213  [SYN Scan on Alive Hosts]
+#### Nessus
+- Advanced Customized Scan
+- DISCOVERY -> Host Discovery settings -> Use Fast Network Discovery
 
 ### The Black Box Walkthrough's : Box 1
 
