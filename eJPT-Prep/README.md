@@ -26,6 +26,14 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - Target > Site map tab > Spider this host
 - Try to bypass the login, using intercept or any other means
 - Intruder option and thier positions to attack
+#### Null Sessions
+- nmblookup -A ip-address
+- smbclient -L //10.10.21.9 -N
+- enum -S 10.1.25.26    [-S for shares; -U for users; -P for password policy;]
+-  nmblookup -A 10.10.10.10
+-  smbclient -L //10.10.10.10 -N (list shares)
+-  smbclient //10.10.10.10/share -N (mount share)
+-  enum4linux -a 10.10.10.10
 
 #### Scanning and OS Fingerprinting
 - fping -a -g 10.142.111.0/24 2> /dev/null
