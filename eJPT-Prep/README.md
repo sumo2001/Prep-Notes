@@ -15,7 +15,6 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - Open python server on attacker machine
 - Download the zip on victim machine and run it
 - We are good to exflitrate data ;)
-
 #### Burp
 - Inspect the website, from that we can able to discover robots.txt
 - Using sniper from burp, check all the directories availibility
@@ -26,21 +25,6 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - Target > Site map tab > Spider this host
 - Try to bypass the login, using intercept or any other means
 - Intruder option and thier positions to attack
-#### Null Sessions
-- nmblookup -A ip-address
-- smbclient -L //10.10.21.9 -N
-- enum -S 10.1.25.26    [-S for shares; -U for users; -P for password policy;]
--  nmblookup -A 10.10.10.10
--  smbclient -L //10.10.10.10 -N (list shares)
--  smbclient //10.10.10.10/share -N (mount share)
--  enum4linux -a 10.10.10.10
--  smbmap -H demo.ine.local
--  smbclient //demo.ine.local/raymond -N   [check for every individual user]
--  enum4linux -s ~/Desktop/wordlists/100-common-passwords.txt demo.ine.local
-#### ARP Spoofing
-- echo 1 > /proc/sys/net/ipv4/ip_forward
-- arpspoof -i tap0 -t 10.13.37.100 -r 10.13.37.101 [t for ]
-
 #### Scanning and OS Fingerprinting
 - fping -a -g 10.142.111.0/24 2> /dev/null
 - nmap -sn -n 10.142.111.*    [There is probably a host that does not respond to ICMP echo requests, but that has a service listening on the network.]
@@ -65,6 +49,23 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - john hashestocrack     ->password      (username)
 - /etc/login.defs  -> to check hashin used for passwords
 - hashcat -m 1800 -a 0 admin.hash /root/Desktop/wordlists/1000000-password-seclists.txt
+#### Null Sessions
+- nmblookup -A ip-address
+- smbclient -L //10.10.21.9 -N
+- enum -S 10.1.25.26    [-S for shares; -U for users; -P for password policy;]
+-  nmblookup -A 10.10.10.10
+-  smbclient -L //10.10.10.10 -N (list shares)
+-  smbclient //10.10.10.10/share -N (mount share)
+-  enum4linux -a 10.10.10.10
+-  smbmap -H demo.ine.local
+-  smbclient //demo.ine.local/raymond -N   [check for every individual user]
+-  enum4linux -s ~/Desktop/wordlists/100-common-passwords.txt demo.ine.local
+#### ARP Spoofing
+- echo 1 > /proc/sys/net/ipv4/ip_forward
+- arpspoof -i tap0 -t 10.13.37.100 -r 10.13.37.101 [-t for target machine IP -r for web server address]
+- -t flag -> the one who is posting data to some ip[r]
+- we will be on the same network as the target and the web server
+- wireshark -> file -> export -> smb2
 ### The Black Box Walkthrough's : Box 1
 
 #### Machine 1
