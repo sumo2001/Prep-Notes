@@ -35,7 +35,8 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 -  smbclient //10.10.10.10/share -N (mount share)
 -  enum4linux -a 10.10.10.10
 -  smbmap -H demo.ine.local
-
+-  smbclient //demo.ine.local/raymond -N   [check for every individual user]
+-  enum4linux -s ~/Desktop/wordlists/100-common-passwords.txt demo.ine.local
 
 #### Scanning and OS Fingerprinting
 - fping -a -g 10.142.111.0/24 2> /dev/null
