@@ -37,6 +37,9 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 -  smbmap -H demo.ine.local
 -  smbclient //demo.ine.local/raymond -N   [check for every individual user]
 -  enum4linux -s ~/Desktop/wordlists/100-common-passwords.txt demo.ine.local
+#### ARP Spoofing
+- echo 1 > /proc/sys/net/ipv4/ip_forward
+- arpspoof -i tap0 -t 10.13.37.100 -r 10.13.37.101 [t for ]
 
 #### Scanning and OS Fingerprinting
 - fping -a -g 10.142.111.0/24 2> /dev/null
