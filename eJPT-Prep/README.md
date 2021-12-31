@@ -143,7 +143,8 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - nmap -sS -sV -p 1234 localhost
 - This reveals a ftp service and version, using metasploit, we can find a inbuilt exploit, then boo tada
 ## Passed eJPT on 17th of December 2021
-![image](https://user-images.githubusercontent.com/51809378/147807428-9a1f2896-5d36-4994-930f-1f09728bb9a0.png)
+![32bf0a12-a207-4330-890b-c635baa4b4f0 (pdf io)](https://user-images.githubusercontent.com/51809378/147807530-f9d33484-9fa7-4d24-82d6-ebdb236324d9.png)
+
 
 
 
