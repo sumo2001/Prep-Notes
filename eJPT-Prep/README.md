@@ -142,6 +142,9 @@ Hey Hai, This is just a walkthrough and kinda recap of what in learnt during my 
 - portfwd add -L [attacker machine IP] -l listening_port -p 80 -r [victim machine IP]
 - nmap -sS -sV -p 1234 localhost
 - This reveals a ftp service and version, using metasploit, we can find a inbuilt exploit, then boo tada
+## Passed eJPT on 17th of December 2021
+![image](https://user-images.githubusercontent.com/51809378/147807428-9a1f2896-5d36-4994-930f-1f09728bb9a0.png)
+
 
 
 
