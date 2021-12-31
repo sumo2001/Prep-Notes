@@ -1,5 +1,6 @@
 # AWS Cloud Practioner Important Points AWS CLF-C01
 
+
 Hi there!
 This is my personal notes which i wrote in hurry prep of AWS Cloud Practioner CLF-C01
 + **Security** 
@@ -188,6 +189,9 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - Agility - A startup is working on a new application that needs to go to market quickly. The application requirements may need to be adjusted in the near future
 - CloudWatch monitors performance, whereas CloudTrail monitors actions in your AWS environment.
 - ![image](https://user-images.githubusercontent.com/51809378/135115436-e895b210-9ea2-4fcf-a790-8eb31adba8b1.png)
+
+## Passed AWS CLF-C01 on 30 September 2021
+![image](https://user-images.githubusercontent.com/51809378/147807315-274f364c-1497-4685-b664-d4904a172ca4.png)
 
 
 
