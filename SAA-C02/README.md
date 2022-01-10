@@ -14,3 +14,11 @@
 +  Partition placement group - spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions, hadoop, kafka
 +  Spread placement group - A Spread placement group is a group of instances that are each placed on distinct racks, with each rack having its own network and power source.
 +  Global Accelerator is a good fit for non-HTTP use cases, such as gaming (UDP), IoT (MQTT), or Voice over IP.
++  Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds
++  CloudWatch alarm actions, you can create alarms that automatically stop, terminate, reboot, or recover your EC2 instances. You can use the stop or terminate actions to help you save money when you no longer need an instance to be running
++  ![image](https://user-images.githubusercontent.com/51809378/148746074-a728ab93-ff42-4a73-bac2-cabd467cdfe5.png)
++  VPC sharing (part of Resource Access Manager) allows multiple AWS accounts to create their application resources such as EC2 instances, RDS databases, Redshift clusters, and Lambda functions, into shared and centrally-managed Amazon Virtual Private Clouds (VPCs)
++  VPC Sharing - Provide shared and centrally-managed VPC
++  The aws S3 sync command uses the CopyObject APIs to copy objects between S3 buckets
++  
+
