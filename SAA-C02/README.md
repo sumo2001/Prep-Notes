@@ -20,5 +20,12 @@
 +  VPC sharing (part of Resource Access Manager) allows multiple AWS accounts to create their application resources such as EC2 instances, RDS databases, Redshift clusters, and Lambda functions, into shared and centrally-managed Amazon Virtual Private Clouds (VPCs)
 +  VPC Sharing - Provide shared and centrally-managed VPC
 +  The aws S3 sync command uses the CopyObject APIs to copy objects between S3 buckets
++  If you intend to reuse code in more than one Lambda function, you should consider creating a Lambda Layer for the reusable code
++  Redis authentication tokens enable Redis to require a token (password) before allowing clients to execute commands, thereby improving data security.
++  A process replaces an existing object and immediately tries to read it. Amazon S3 always returns the latest version of the object
++  A launch configuration is an instance configuration template that an Auto Scaling group uses to launch EC2 instance
++  A launch template to provision capacity across multiple instance types using both On-Demand Instances and Spot Instances to achieve the desired scale, performance, and cost
++  Blue/green deployment is a technique for releasing applications by shifting traffic between two identical environments running different versions of the application
++  AWS Global Accelerator is a network layer service that directs traffic to optimal endpoints over the AWS global network, this improves the availability and performance of your internet applications
 +  
 
