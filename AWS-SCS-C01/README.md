@@ -7,3 +7,14 @@
 -  Can get History of resource configurations for troubleshooting
 -  You can obtain the details of the event API call that invoked the change (e.g., who made the request, at what time, and from which IP address) from the CloudTrail logs.
 -  ![image](https://user-images.githubusercontent.com/51809378/155887540-461758d9-09b0-4073-9f43-f1e0feda7e73.png)
+-  to monitor access, AWS Config uses CloudTrail
+-  to enable it in all region you have to do it manually
+-  requires IAM role (with Read only permissions to the all resources, Write access to S3 logging bucket, Publish access to SNS)
+-  allows resource tracking, compliance, auditing, security analysis
+-  AWS Config sends notifications for the following events:
+     - Configuration item change for a resource.
+     - Configuration history for a resource was delivered for your account.
+     - Configuration snapshot for recorded resources was started and delivered for your account.
+     - Compliance state of your resources and whether they are compliant with your rules.
+     - Evaluation started for a rule against your resources.
+     - AWS Config failed to deliver the notification to your account.
