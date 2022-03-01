@@ -191,7 +191,8 @@ There are 3 types of cloud : Private Cloud, Public Cloud and Hybrid Cloud
 - ![image](https://user-images.githubusercontent.com/51809378/135115436-e895b210-9ea2-4fcf-a790-8eb31adba8b1.png)
 
 ## Passed AWS CLF-C01 on 30 September 2021
-![image](https://user-images.githubusercontent.com/51809378/147807315-274f364c-1497-4685-b664-d4904a172ca4.png)
+![Screenshot from 2022-03-02 02-06-49](https://user-images.githubusercontent.com/51809378/156244964-ee271c00-87dc-463b-961e-dda30cd64a93.png)
+
 
 
 
