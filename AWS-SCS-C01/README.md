@@ -94,6 +94,11 @@
 -  NAT Gateway is primarily used to enable instances in a private subnet to connect to the Internet or other AWS services, but prevents the Internet from initiating a connection with those instances
 -   You have to use AWS Config to check whether AWS CloudTrail is enabled on your AWS accounts.
 -   ![image](https://user-images.githubusercontent.com/51809378/156755732-07629088-8c11-426e-adcc-e7fb4ed91670.png)
-
-
-
+### Logging and Monitoring:
+- AWS Security Hub simply gives you a comprehensive view of your high-priority security alerts and security posture across your AWS accounts. It is not capable of tracking the activities and resources of all AWS Regions, unlike AWS CloudTrail
+- Use AWS services and third-party IDS/IPS solutions offered in AWS Marketplace to stay one step ahead of potential attackers. 
+- When AWS Config detects changes that are non-compliant, you can create a CloudWatch Events rule that will trigger an AWS Lambda function that can perform actions
+- Amazon Kinesis Data Streams enables real-time processing of streaming big data. It provides ordering of records, as well as the ability to read and/or replay records in the same order to multiple Amazon Kinesis Applications
+- The Amazon Kinesis Client Library (KCL) -> to perform counting, aggregation, and filtering
+- Elasticsearch is a popular open-source search and analytics engine from Elastic that provides a quick time to value and is well supported by a vibrant open-source community
+- 
