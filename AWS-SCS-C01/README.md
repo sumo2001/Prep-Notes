@@ -72,4 +72,28 @@
 ### AWS Organisations
 -  Allows us to setup service control policy [ploicies appled to OU's] to block access, these cannot be used to allow access to a certain service
 -  They even allows us to specify a bounbdary for root account, overwrites any local policy within OU
+## Section based review and key points from John Bonso
+### Incident Response: 
+- Amazon GuardDuty monitors the security of your AWS environment by analyzing and processing VPC Flow Logs, AWS CloudTrail event logs, and DNS logs
+- Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts
+- You can customise your threat lists and add trusted IPs in Guard Duty
+- ![image](https://user-images.githubusercontent.com/51809378/156748907-9fa9334d-de92-4acd-886e-8ad3c48e544d.png)
+- GuardDuty can send notifications based on Amazon CloudWatch Events when any changes in the findings take place. These changes include newly generated findings or subsequent occurrences of existing findings.
+- In order to receive notifications about GuardDuty findings based on CloudWatch Events, you must create a CloudWatch Events rule and a target for GuardDuty. This rule enables CloudWatch to send events for all findings that GuardDuty generates to the target that is specified in the rule
+-  Amazon Macie is just a security service that uses machine learning to automatically discover, classify, and protect sensitive data in AWS, specifically in Amazon S3
+-  Amazon Macie has the ability to detect global access permissions inadvertently being set on sensitive data, detect uploading of API keys inside source code, and verify sensitive customer data is being stored and accessed in a manner that meets their compliance standard
+-  Enabling rotation in AWS Secrets Manager causes the secret to rotate immediately, uses a Lambda function Secrets Manager provides
+-  If your RDS instances or on a private VPC using AWS SM,  Secrets Manager also configures the Lambda function to run within that VPC
+-  Secrets Manager encrypts the protected text of a secret by using the AWS Key Management Service (AWS KMS).
+-  ![image](https://user-images.githubusercontent.com/51809378/156751844-26df5a55-6996-4bd9-af88-6b46f760c928.png)
+-  Amazon GuardDuty can generate findings based on suspicious activities such as requests coming from known malicious IP addresses, changing of bucket policies/ACLs to expose an S3 bucket publicly, or suspicious API call patterns that attempt to discover misconfigured bucket permissions.
+-  Macie cannot detect usage patterns on S3 data. Although Amazon Macie is capable of detecting policy changes in S3 buckets, this is not enough to detect the potential threats
+-  Amazon SQS has its own resource-based permissions system that uses policies written, Access to Amazon SQS requires credentials that AWS can use to authenticate your requests. 
+-  Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices
+- You can assign up to five security groups to the instance. Security groups act at the instance level, not the subnet level.
+-  NAT Gateway is primarily used to enable instances in a private subnet to connect to the Internet or other AWS services, but prevents the Internet from initiating a connection with those instances
+-   You have to use AWS Config to check whether AWS CloudTrail is enabled on your AWS accounts.
+-   ![image](https://user-images.githubusercontent.com/51809378/156755732-07629088-8c11-426e-adcc-e7fb4ed91670.png)
+
+
 
