@@ -108,4 +108,43 @@
 - In s3, The resource owner can grant access permissions to other resources and users by writing an access policy
 - . With Requester Pays buckets, the requester instead of the bucket owner pays the cost of the request and the data download from the bucket
 ### Infrastructure Security
-- 
+- You can authenticate to your DB instance using AWS Identity and Access Management (IAM) database authentication. IAM database authentication works with MySQL and PostgreSQL.
+- With this authentication method, you don’t need to use a password when you connect to a DB instance. Instead, you use an authentication token.
+- IAM database authentication provides the following benefits:
+  - Network traffic to and from the database is encrypted using Secure Sockets Layer (SSL).
+  - You can use IAM to centrally manage access to your database resources, instead of managing access individually on each DB instance.
+  - For applications running on Amazon EC2, you can use profile credentials specific to your EC2 instance to access your database instead of a password
+- Classic Load Balancer does not support Server Name Indication (SNI). You have to use an Application Load Balancer instead or a CloudFront web distribution to use SNI.
+-  The public-facing Application Load Balancer can route the traffic to these web servers hosted in private subnets
+-  You can turn off access to your instance metadata by disabling the HTTP endpoint of the instance metadata service, regardless of which version of the instance metadata service you are using. You can reverse this change at any time by enabling the HTTP endpoint. Use the modify-instance-metadata-options CLI command and set the http-endpoint parameter to disabled.
+-  AWS Systems Manager agent simply makes it possible for Systems Manager to update, manage, and configure the AWS resources.
+-  ![image](https://user-images.githubusercontent.com/51809378/156792179-079fbcc6-238c-4ca6-b353-2c8e4adb9bb4.png)
+- Your VPC has attributes that determine whether instances launched in the VPC receive public DNS hostnames that correspond to their public IP addresses, and whether DNS resolution through the Amazon DNS server is supported for the VPC.
+- Amazon provided DNS server at the 169.254.169.253 IP address, or the reserved IP address at the base of the VPC
+- Perfect Forward Secrecy is a feature that provides additional safeguards against the eavesdropping of encrypted data, through the use of a unique random session key. This prevents the decoding of captured data, even if the secret long-term key is compromised.
+- ![image](https://user-images.githubusercontent.com/51809378/156797742-eb082735-eebe-4560-8b83-22aa7965adcb.png)
+- ![image](https://user-images.githubusercontent.com/51809378/156797882-45fa40d6-b24e-4e84-b887-6246aeec765c.png)
+- CloudFront and Elastic Load Balancing are the two AWS services that support Perfect Forward Secrecy
+- Amazon ECS enables you to inject sensitive data into your containers by storing your sensitive data in either AWS Secrets Manager secrets or AWS Systems Manager Parameter Store parameters and then referencing them in your container definition. Fargate also supports this feature
+- Users of a master account can configure GuardDuty:
+  - Users from a master account can generate sample findings in their own account. Users from a master account CANNOT generate sample findings in members’ accounts.
+  - Users from a master account can archive findings in their own accounts and in all member accounts.
+  - Users from a master account can upload and further manage trusted IP lists and threat lists in their own account.
+- Users of a member account can configure GuardDuty:
+  - Users from a member account can generate sample findings in their own member account. Users from a member account can’t generate sample findings in the master or other member accounts.
+  - Users from a member account can’t archive findings either in their own account or in their master’s account, or in other member accounts.
+  - Users from a member account can’t upload and further manage trusted IP lists and threat lists.
+  - Trusted IP lists and threat lists that are uploaded by the master account are imposed on GuardDuty functionality in its member accounts. 
+ - AWS Firewall Manager simplifies your AWS WAF, AWS Shield Advanced, and Amazon VPC security groups administration and maintenance tasks across multiple accounts and resources.
+ - Firewall Manager provides these benefits:
+   - Helps to protect resources across accounts
+   - Helps to protect all resources of a particular type, such as all Amazon CloudFront distributions
+   - Helps to protect all resources with specific tags
+   - Automatically adds protection to resources that are added to your account
+   - Allows you to subscribe all member accounts in an AWS Organizations organization to AWS Shield Advanced, and automatically subscribes new in-scope accounts that join the organization
+   - Allows you to apply security group rules to all member accounts or specific subsets of accounts in an AWS Organizations organization, and automatically applies the rules to new in-scope accounts that join the organization
+   - Lets you use your own rules, or purchase managed rules from AWS Marketplace
+  - AWS Resource Access Manager (RAM) is a simple service that lets you share your resources with any AWS account or through AWS Organizations.
+  - Each VPC endpoint is represented by one or more Elastic Network Interfaces (ENIs) with private IP addresses in your VPC subnets
+  - AWS Systems Manager Parameter Store provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database strings, and license codes as parameter values.
+  
