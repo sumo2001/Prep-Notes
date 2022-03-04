@@ -101,4 +101,11 @@
 - Amazon Kinesis Data Streams enables real-time processing of streaming big data. It provides ordering of records, as well as the ability to read and/or replay records in the same order to multiple Amazon Kinesis Applications
 - The Amazon Kinesis Client Library (KCL) -> to perform counting, aggregation, and filtering
 - Elasticsearch is a popular open-source search and analytics engine from Elastic that provides a quick time to value and is well supported by a vibrant open-source community
+- Use AWS Config to evaluate the configuration settings of your AWS resources. You do this by creating AWS Config rules, which represent your ideal configuration settings.
+- You can configure your environment to stream logs to Amazon CloudWatch Logs in the Elastic Beanstalk console or by using configuration options
+- If logs are only pushed for a short time after the awslogs agent is restarted, check for duplicates in the [logstream] section of the agent configuration file. Each section must have a unique name.
+- If the awslogs.log log file takes up too much disk space, check the log file for errors and correct them. If the log file only contains informational messages, specify a lower logging level for the logging_config_file option in the agent configuration file.
+- In s3, The resource owner can grant access permissions to other resources and users by writing an access policy
+- . With Requester Pays buckets, the requester instead of the bucket owner pays the cost of the request and the data download from the bucket
+### Infrastructure Security
 - 
