@@ -164,6 +164,9 @@
   - One-way:outgoing – Users in this domain will not be able to access any resources in the specified realm.
   - Two-way (Bi-directional) – Users in this domain and users in the specified realm will be able to access resources in either domain or realm.
 ### Data Protection 
+- Envelope encryption is the practice of encrypting plaintext data with a data key, and then encrypting the data key under another key
+- ![image](https://user-images.githubusercontent.com/51809378/156876530-978ff8b3-6f23-486c-9d57-03a367dc0e39.png)
 - 
+
 
 
