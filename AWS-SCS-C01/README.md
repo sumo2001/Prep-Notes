@@ -163,6 +163,7 @@
   - One-way:incoming – Users in the specified realm will not be able to access any resources in this domain.
   - One-way:outgoing – Users in this domain will not be able to access any resources in the specified realm.
   - Two-way (Bi-directional) – Users in this domain and users in the specified realm will be able to access resources in either domain or realm.
-
+### Data Protection 
+- 
 
 
