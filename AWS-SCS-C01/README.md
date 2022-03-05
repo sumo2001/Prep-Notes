@@ -166,7 +166,19 @@
 ### Data Protection 
 - Envelope encryption is the practice of encrypting plaintext data with a data key, and then encrypting the data key under another key
 - ![image](https://user-images.githubusercontent.com/51809378/156876530-978ff8b3-6f23-486c-9d57-03a367dc0e39.png)
+- A key policy document cannot exceed 32 KB (32,768 bytes). Key policy documents use the same JSON syntax
+- "Principal": {"AWS": "arn:aws:iam::111122223333:root"} ->  Allows the AWS IAM service of the 111122223333 AWS Account to delegate permissions and KMS actions
+- ![image](https://user-images.githubusercontent.com/51809378/156889143-aaf8f4b2-14d1-45c7-834a-805c3e097cdc.png)
+- By default, the log files delivered by CloudTrail to your bucket are encrypted by Amazon server-side encryption with Amazon S3-managed encryption keys (SSE-S3).
+- Enabling server-side encryption encrypts the log files but not the digest files with SSE-KMS. Digest files are encrypted with Amazon S3-managed encryption keys (SSE-S3).
+- Automatic key rotation is not supported on the following types of CMKs, but you can rotate these CMKs manually.
+  - 1. Asymmetric CMKs
+  - 2. CMKs in custom key stores
+  - 3. CMKs that have imported key material
+- AWS KMS does not delete any rotated key material until you delete the CMK. Key rotation changes only the CMK’s backing key, which is the cryptographic material that is used in encryption operations
+- AWS KMS supports optional automatic key rotation only for customer-managed CMKs.
 - 
+
 
 
 
