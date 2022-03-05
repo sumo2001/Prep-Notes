@@ -159,6 +159,10 @@
   - Users in an Amazon Cognito user pool
   - Users who authenticate with external identity providers such as Facebook, Google, or a SAML-based identity provider
   - Users authenticated via your own existing authentication process
-- 
+- Trust relationships enable access to various resources that can be either one-way or two-way. A one-way trust is a unidirectional authentication path created between two domains
+  - One-way:incoming – Users in the specified realm will not be able to access any resources in this domain.
+  - One-way:outgoing – Users in this domain will not be able to access any resources in the specified realm.
+  - Two-way (Bi-directional) – Users in this domain and users in the specified realm will be able to access resources in either domain or realm.
+
 
 
