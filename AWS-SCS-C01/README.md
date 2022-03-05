@@ -147,4 +147,18 @@
   - AWS Resource Access Manager (RAM) is a simple service that lets you share your resources with any AWS account or through AWS Organizations.
   - Each VPC endpoint is represented by one or more Elastic Network Interfaces (ENIs) with private IP addresses in your VPC subnets
   - AWS Systems Manager Parameter Store provides secure, hierarchical storage for configuration data management and secrets management. You can store data such as passwords, database strings, and license codes as parameter values.
-  
+### Identity and Access Management 
+- A best practice they recommend is to delete root user access keys
+- Inline policies are just regular policies that you create, manage, and embed directly into a single user, group, or role.
+- You should not use the root account for managing any resource. Create an IAM user with the necessary permissions instead to perform these tasks.
+- ![image](https://user-images.githubusercontent.com/51809378/156867467-16d81579-5dcd-44bd-9090-0e29c08675f5.png)
+-  User pools are user directories that provide sign-up and sign-in options for your app users. Identity pools enable you to grant your users access to other AWS services. You can use identity pools and user pools separately or together.
+-  ![image](https://user-images.githubusercontent.com/51809378/156869500-6927d30a-2e8c-482d-bba6-2f9b85a3daa7.png)
+-  To use an external ID, update a role trust policy with the external ID of your choice. Then, when someone uses the AWS CLI or AWS API to assume that role, they must provide the external ID.
+-  Amazon Cognito identity pools enable you to create unique identities and assign permissions for users. Your identity pool can include:
+  - Users in an Amazon Cognito user pool
+  - Users who authenticate with external identity providers such as Facebook, Google, or a SAML-based identity provider
+  - Users authenticated via your own existing authentication process
+- 
+
+
