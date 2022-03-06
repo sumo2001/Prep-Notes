@@ -177,7 +177,12 @@
   - 3. CMKs that have imported key material
 - AWS KMS does not delete any rotated key material until you delete the CMK. Key rotation changes only the CMK’s backing key, which is the cryptographic material that is used in encryption operations
 - AWS KMS supports optional automatic key rotation only for customer-managed CMKs.
+- You must also have permissions to kms:Encrypt, kms:ReEncrypt*, kms:GenerateDataKey*, and kms:DescribeKey actions. to complete a KMS Action
+- ![image](https://user-images.githubusercontent.com/51809378/156926272-64e311ac-3764-4e69-b368-8a752e9f384d.png)
+- All AWS KMS cryptographic operations with symmetric CMKs accept an encryption context, an optional set of key-value pairs that can contain additional contextual information about the data. AWS KMS uses the encryption context as additional authenticated data (AAD) to support authenticated encryption.
+- AWS Security Hub provides you with a comprehensive view of your security state in AWS and helps you check your environment against security industry standards including AWS Foundational Security Best Practices, CIS AWS Foundations Benchmark, and Payment Card Industry Data Security Standard (PCI DSS)
 - 
+
 
 
 
