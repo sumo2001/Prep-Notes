@@ -186,10 +186,4 @@
 - The GenerateDataKeyWithoutPlaintext API generates a unique data key. This operation returns a data key that is encrypted under a customer master key (CMK) that you specify. GenerateDataKeyWithoutPlaintext is identical to GenerateDataKey except that it returns only the encrypted copy of the data key.
 - Use the alias ARN of the CMK in the application. Every year, manually rotate the CMK by creating a new CMK and then import new key material to it. Point the key alias to the new CMK.
 - ![image](https://user-images.githubusercontent.com/51809378/156931062-3d9345db-7699-4877-8dea-0d3460fdb416.png)
-
-
-
-
-
-
-
+- Allow ephemeral ports by creating a new rule in the Network ACL to allow outbound traffic on ports 1024 – 65535.
