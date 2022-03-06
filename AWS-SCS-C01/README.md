@@ -187,3 +187,5 @@
 - Use the alias ARN of the CMK in the application. Every year, manually rotate the CMK by creating a new CMK and then import new key material to it. Point the key alias to the new CMK.
 - ![image](https://user-images.githubusercontent.com/51809378/156931062-3d9345db-7699-4877-8dea-0d3460fdb416.png)
 - Allow ephemeral ports by creating a new rule in the Network ACL to allow outbound traffic on ports 1024 – 65535.
+- If you want to require HTTPS between viewers and CloudFront, you must change the AWS region to US East (N. Virginia) in the AWS Certificate
+- If you want to require HTTPS between CloudFront and your origin and you’re using an ELB load balancer as your origin, you can request or import a certificate in any region
