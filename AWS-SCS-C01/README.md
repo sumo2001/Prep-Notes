@@ -179,9 +179,15 @@
 - AWS KMS supports optional automatic key rotation only for customer-managed CMKs.
 - You must also have permissions to kms:Encrypt, kms:ReEncrypt*, kms:GenerateDataKey*, and kms:DescribeKey actions. to complete a KMS Action
 - ![image](https://user-images.githubusercontent.com/51809378/156926272-64e311ac-3764-4e69-b368-8a752e9f384d.png)
-- All AWS KMS cryptographic operations with symmetric CMKs accept an encryption context, an optional set of key-value pairs that can contain additional contextual information about the data. AWS KMS uses the encryption context as additional authenticated data (AAD) to support authenticated encryption.
+- All AWS KMS cryptographic operations with symmetric CMKs accept an encryption context, an optional set of key-value pairs that can contain additional contextual information about the data. AWS KMS uses the **encryption context** as additional authenticated data (AAD) to support authenticated encryption.
 - AWS Security Hub provides you with a comprehensive view of your security state in AWS and helps you check your environment against security industry standards including AWS Foundational Security Best Practices, CIS AWS Foundations Benchmark, and Payment Card Industry Data Security Standard (PCI DSS)
-- 
+- Amazon Kinesis Data Analytics is the easiest way to analyze streaming data, gain actionable insights, and respond to your business and customer needs in real-time.
+- ![image](https://user-images.githubusercontent.com/51809378/156930440-6b930d8f-a188-4e04-a51d-e60aa081b938.png)
+- The GenerateDataKeyWithoutPlaintext API generates a unique data key. This operation returns a data key that is encrypted under a customer master key (CMK) that you specify. GenerateDataKeyWithoutPlaintext is identical to GenerateDataKey except that it returns only the encrypted copy of the data key.
+- Use the alias ARN of the CMK in the application. Every year, manually rotate the CMK by creating a new CMK and then import new key material to it. Point the key alias to the new CMK.
+- ![image](https://user-images.githubusercontent.com/51809378/156931062-3d9345db-7699-4877-8dea-0d3460fdb416.png)
+
+
 
 
 
