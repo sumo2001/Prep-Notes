@@ -1,3 +1,3 @@
 hello there
 - On Medium
--  [sumododda.medium.com](url)
+-  [https://sumododda.medium.com](url)
