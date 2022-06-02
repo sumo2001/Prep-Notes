@@ -27,7 +27,11 @@
   - kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml
   - kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml
   - Port and targetport must be mentioned, whereas nodeport is optional for a kubernetes cluster
-### Imperative Commands
+### Namespaces
+  - kubectl get pods --namespace=dev
+  - kubectl config set-context $(kubectl config current-context) --namespace=dev
+  - kubectl get pods --all-names
+  - kubectl run redis --image=redis -n=sumanth
 
 - Declarative Commands
 
