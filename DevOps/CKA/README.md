@@ -1,4 +1,4 @@
-- Pods
+### Pods
   - kubectl run nginx --image nginx
   - kubectl get pods
   - kubectl describe pods
@@ -7,13 +7,27 @@
   - kubectl run redis --image=redis123 --dry-run=client -o yaml > redis.yaml
   - kubectl apply -f redis.yaml
   - kubectl edit pod podname
-- ReplicaSet
-
-- Deployments
-
-- Services
-
-- Imperative Commands
+### ReplicaSet and Deployments
+  - kubectl explain replicaset
+  - kubectl create -f rs.yaml
+  - kubectl get ReplicaSet
+  - kubectl get replicaset new-replica-set
+  - kubectl delete replicaset myapp-replicaset
+  - kubectl delete pod new-replica-a3sdnn new-replica-rnf4f 
+  - kubectl delete replicaset myapp-rs  [deletes all the underlying pods] 
+  - kubectl replace -f replica-def.yaml
+  - kubectl scale -replicas=6 -f replicaset.yaml
+  - kubectl scale rs new-replica-set --replicas=5
+  - kubectl edit rs new-replica-se
+  - kubectl get all
+### Services
+  - kubectl get service
+  - kubectl describe svc kuberenetes
+  - kubectl expose ppod nginx --type=NodePort --port=80 --name=nginx-service --dry-run=client -o yaml
+  - kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml
+  - kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml
+  - Port and targetport must be mentioned, whereas nodeport is optional for a kubernetes cluster
+### Imperative Commands
 
 - Declarative Commands
 
