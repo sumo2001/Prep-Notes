@@ -20,10 +20,14 @@
   - kubectl scale rs new-replica-set --replicas=5
   - kubectl edit rs new-replica-se
   - kubectl get all
+  - kubectl create deployment --image=nginx nginx
+  - kubectl create deployment nginx --image=nginx --replicas=4
+  - 
+
 ### Services
   - kubectl get service
   - kubectl describe svc kuberenetes
-  - kubectl expose ppod nginx --type=NodePort --port=80 --name=nginx-service --dry-run=client -o yaml
+  - kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-run=client -o yaml
   - kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml
   - kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml
   - Port and targetport must be mentioned, whereas nodeport is optional for a kubernetes cluster
@@ -33,7 +37,23 @@
   - kubectl get pods --all-names
   - kubectl run redis --image=redis -n=sumanth
 
-- Declarative Commands
+### Imperative Commands
+- Create Objects
+  - kubectl create -f nginx.yaml
+  - kubectl run --image=nginx nginx
+  - kubectl expose deployment nginx --port 80
+- Update Objects
+  - kubectl edit deployment nginx
+  - kubectl replace -f nginx.yaml
+  - kubectl replace --force -f nginx.yaml
+  - kubectl scale deployment nginx --replicas=5
+  - kubectl set image deployment nginx nginx=nginx:1.18
+### Declarative Commands
+- Create or Update
+  - kubectl apply -f /path/config/files or kubectl apply -f nginx.yam;
+ 
+ 
+     
 
 - **Create an NGINX Pod**
   - kubectl run nginx --image=nginx
