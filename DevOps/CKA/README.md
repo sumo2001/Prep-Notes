@@ -1,3 +1,22 @@
+- Pods
+  - kubectl run nginx --image nginx
+  - kubectl get pods
+  - kubectl describe pods
+  - kubectl get pods -o wide [short and cute description]
+  - kubectl delete pod webapp
+  - kubectl run redis --image=redis123 --dry-run=client -o yaml > redis.yaml
+  - kubectl apply -f redis.yaml
+  - kubectl edit pod podname
+- ReplicaSet
+
+- Deployments
+
+- Services
+
+- Imperative Commands
+
+- Declarative Commands
+
 - **Create an NGINX Pod**
   - kubectl run nginx --image=nginx
 
