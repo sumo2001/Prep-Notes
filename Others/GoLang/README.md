@@ -1,4 +1,5 @@
 ## Introduction
+- Go is NOT an OBJECT ORIENTATED programming language, so classes concept
 - Course's XML -> https://github.com/StephenGrider/GoCasts/tree/master/diagrams
 ```
     package main
