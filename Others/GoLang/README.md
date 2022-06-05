@@ -17,8 +17,8 @@
  - Go is a static language which is different from dynamic languages like python, java, js, in go you need to tell which data type the variable is going to save
  ```
  In js: var number = "abcd"
- In go: var card string = "abcd"
+ In go: var card string = "abcd" or card := "abcd"
  ```
- - h
+ - Go can automatically reconginze the data type from the input of right side and automatically assigns the variable type to it
  
 
