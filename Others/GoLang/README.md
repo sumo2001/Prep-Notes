@@ -19,6 +19,19 @@
  In js: var number = "abcd"
  In go: var card string = "abcd" or card := "abcd"
  ```
- - Go can automatically reconginze the data type from the input of right side and automatically assigns the variable type to it
- 
+ - Go can automatically reconginze the data type from the input of right side and automatically assigns the variable type to it and also := is only used to assign a new variable
+ - In Go, the functions within same packages ad different files can call each other, without defining them in the each others code
+ - Array are not editable, where slices are a from of arrays with ediatble features
+ ``` 
+  - Create a slice
+ cards := []string{"data 1", "data 2"}
+  -  Append data
+  cards = append(cards, "new data")
+  - For Loop for a slice
+  cards := []string{"data 1", "data 2"}
+  for i, card := range cards {
+    printLn{i, card}
+  } 
+ ``` 
+ - Compiler will yell at you if you dont use the variable that you declared in your code
 
