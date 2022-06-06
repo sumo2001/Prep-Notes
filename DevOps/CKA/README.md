@@ -51,7 +51,16 @@
   - kubectl set image deployment nginx nginx=nginx:1.18
 ### Declarative Commands
 - Create or Update
-  - kubectl apply -f /path/config/files or kubectl apply -f nginx.yam;
+  - kubectl apply -f /path/config/files or kubectl apply -f nginx.yaml
+### Rolling and Rollout Updates
+- Update
+  - kubectl apply -f delpoyment.yaml
+  - kubectl set image deployment/myapp-deployment nginx=nginx:1.19.1
+ - Status
+   - kubectl rollout status deployment/myapp-deployment
+   - kubectl rollout history deployment/myapp-deployment
+  - Rollback
+    - kubectl rollout undo deployment/myapp-deployment   
  
  
  
