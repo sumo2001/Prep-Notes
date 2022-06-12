@@ -1,6 +1,7 @@
 
 # Tryhackme Experience
 - Index
+  - https://gist.github.com/AshtonIzmev/72f33ae4ff93a6603d55959b2b1e8078#file-thm_steps-sh
   - [Reconnaissance](https://github.com/sumo2001/Prep-Notes/tree/main/tryhackme#reconnaissance)
   - [Initial Access](https://github.com/sumo2001/Prep-Notes/tree/main/tryhackme#initial-access)
   - [Interesting files and paths](https://github.com/sumo2001/Prep-Notes/tree/main/tryhackme#interesting-files-and-paths)
