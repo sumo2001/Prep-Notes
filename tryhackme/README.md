@@ -1,10 +1,10 @@
 
 # Tryhackme Experience
 - Index
-  - [Reconnaissance](https://github.com/sumo2001/Prep-Notes/new/main#reconnaissance)
-  - [Initial Access](https://github.com/sumo2001/Prep-Notes/new/main#initial-access)
-  - [Interesting files and paths](https://github.com/sumo2001/Prep-Notes/new/main#interesting-files-and-paths)
-  - [Esclation and Tweaks](https://github.com/sumo2001/Prep-Notes/new/main#esclation-and-tweaks)
+  - [Reconnaissance](https://github.com/sumo2001/Prep-Notes/tree/main#reconnaissance)
+  - [Initial Access](https://github.com/sumo2001/Prep-Notes/tree/main#initial-access)
+  - [Interesting files and paths](https://github.com/sumo2001/Prep-Notes/tree/main#interesting-files-and-paths)
+  - [Esclation and Tweaks](https://github.com/sumo2001/Prep-Notes/tree/main#esclation-and-tweaks)
 
 
 ### Reconnaissance
