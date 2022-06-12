@@ -24,7 +24,8 @@
   - SMBMap allows users to enumerate samba share drives across an entire domain. List share drives, drive permissions, share contents etc.
 - smbclient //target/share
   - Mostly used in null sessions kinda samba exploitable directories
-- rustscan 
+- rustscan -a target
+  - The modern NMAp scanner  
 ### Initial Access
 - Searchsploit nagios
   - searchsploit -m php/webapps/blah.txt  -> convert to py shell and read the comments/usage details in the the following code and input accordingly
