@@ -1,5 +1,5 @@
 
-# Tryhackme Experience
+# TryHackMe Experience
 - Index
   - https://gist.github.com/AshtonIzmev/72f33ae4ff93a6603d55959b2b1e8078#file-thm_steps-sh
   - [Reconnaissance](https://github.com/sumo2001/Prep-Notes/tree/main/tryhackme#reconnaissance)
@@ -9,7 +9,7 @@
 
 
 ### Reconnaissance
-- Better to configure etc/hosts
+- Better to configure /etc/hosts
 - ss -ltp helps in look after listening network sockets on a host
 - Nmap -sC -sV -v target   
   - sV tries to find out which services are running on the target
