@@ -61,6 +61,17 @@
    - kubectl rollout history deployment/myapp-deployment
   - Rollback
     - kubectl rollout undo deployment/myapp-deployment   
- 
+ ### Backup and Restore
+ - Backup
+   -  ETCDCTL_API=3 etcdctl snapshot save backup.db
+   -  ETCDCTL_API=3 etcdctl snapshot status backup.db
+ - Restore
+   - service kube-apiserver stop
+   - ETCDCTL_API=3 etcdctl snapshot restore backup.db --data-dir /var/lib/etcd-from-backup
+   - ![image](https://user-images.githubusercontent.com/51809378/173883596-6daf12a4-f690-41d6-8bee-f4988a6e26e1.png)
+   - service kube-apiserver start
+ - With all the etcd command we have to mention enpoints, cacert, etcd-server cert, etcd-server key 
+   - ![image](https://user-images.githubusercontent.com/51809378/173883436-1fa9a0f1-5e83-4931-a69a-f76418de66eb.png)
+  
  
  
