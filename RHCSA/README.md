@@ -1,4 +1,5 @@
 Wish me luck
+<p align="center"> <img src="https://github.com/sumo2001/Prep-Notes/assets/51809378/a516eb2a-e488-4e38-8027-6d29ca3e4f67"> <p/>
 
 - The /boot cannot reside within the LVM
 - There are 6 console screens available during the installation process of RHEL, the installer is known as anaconda which saves its log at /tmp and later moves them to /var/log/
