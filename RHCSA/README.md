@@ -19,4 +19,8 @@ Wish me luck
   - /sys - info is used to load necessary support for the devices 
 - RHEL supports seven types of files: regular, directory, block special device, character special device, symbolic link, named pipe, and socket
 - gzip-compressed (-z) And bzip2-compressed (-j) List (-t) the content
+- umask - Its purpose is to set default permissions on new files and directories without touching the permissions on existing files and directories.  The default umask value is set to 0022 for all userss including the root user.
+- The setuid and setgid bits may be defined on binary executable files to provide non-owners and non-group members the ability to run them with the privileges of the owner or the owning group, respectively
+
+
 
