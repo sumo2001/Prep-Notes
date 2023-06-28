@@ -6,3 +6,17 @@ Wish me luck
 - Wayland is an advanced display protocol used by graphical applications of RHEL, Wayland provides superior graphics capabilities, features, and performance than X.
 - There are two components that are critical to the functionality of a graphical environment: a display manager (a.k.a. login manager) and a desktop environment. Both are launched following the completion of the groundwork established by Wayland.
 - The login/display manager is the one that presents us with a login page for us to log in, the so-called GDM (Gnome Display Manager)
+- File System Categories
+  - / - The Root File System
+  - /etc - The Etcetera - or extended text configuration
+  - /boot - the boot file system
+  - /opt - the optional directory - hold additional software that may need to be installed on the system
+  - /usr - the UNIX System resources - commands required at system boot
+  - /var - The Variable Directory - data that frequently changes 
+  - /dev - The Devices File system  - used to store device nodes for physical hardware and virtual devices, managed by udevd
+  - /proc - The Procfs File System - cureent state of CPU mem Disks, fs, netwokring snd so on, destroyed at shutdown
+  - /run - the repo of data for processes running on the system
+  - /sys - info is used to load necessary support for the devices 
+- RHEL supports seven types of files: regular, directory, block special device, character special device, symbolic link, named pipe, and socket
+- gzip-compressed (-z) And bzip2-compressed (-j) List (-t) the content
+
