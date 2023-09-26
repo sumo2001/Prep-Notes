@@ -26,4 +26,8 @@
 
 ![image](https://user-images.githubusercontent.com/51809378/139378483-f052332d-a14a-42e3-89eb-e0a1bee8c316.png)
 + Find the linux version : cat /etc/issue
+  
++ Authentication confirms that the user is who they say they are.
++ Session management identifies which subsequent HTTP requests are being made by that same user.
++ Access control determines whether the user is allowed to carry out the action that they are attempting to perform.
 
