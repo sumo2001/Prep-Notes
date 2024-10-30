@@ -18,37 +18,10 @@
 - https://gtfobins.github.io/
 - https://github.com/Tib3rius/AutoRecon
 
+## Hack The BOX
+- IMAP/POP3 - https://donsutherland.org/crib/imap
 
-## Exam Structure
 
-Pass: 70 and above
-60 points
-
-3 independent targets
-
-3-step targets (low and high privileges)
-20 points per machine
-10 points for low-privilege
-10 points for privilege escalation
-40 points
-
-2 clients
-1 domain controller
-
-Active Directory set
-Points are awarded only for the full exploit chain of the domain
-No partial points will be awarded
-One of these combinations will give you enough points to pass:
-
-✅ 40 pt AD + 3 local.txt flags
-
-✅ 40 pt AD + 2 local.txt flags + 1 proof.txt flag
-
-✅ 40 pt AD + 2 local.txt flags + bonus points
-
-✅ 40 pt AD + 1 proof.txt + 1 local.txt + bonus points
-
-✅ 3 fully completed non-AD machines + bonus points
 
 
 
